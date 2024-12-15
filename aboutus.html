@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Travel.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="font-roboto bg-gray-100">
+    <header class="bg-blue-600 text-white">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="flex items-center">
+                <img src="https://storage.googleapis.com/a1aa/image/CizLW4IqEEJWDBMTc8jx7GWvqxo3E68zc4tdCdBumvSpYj9E.jpg" alt="Travel.com logo" class="h-12" width="150" height="50">
+                <nav class="ml-10 space-x-4">
+                    <a href="index.html" class="hover:underline">Accueil</a>
+                    <a href="reservation.html" class="hover:underline">Réservation</a>
+                    <a href="aboutus.html" class="hover:underline">About Us</a>
+                    <a href="contact.html" class="hover:underline">Contact Us</a>
+                </nav>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="signin.html" class="hover:underline">Sign In</a>
+                <a href="registre.html" class="hover:underline">Register</a>
+                <a href="#" class="hover:underline"><i class="fas fa-globe"></i> EN</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-12 px-6">
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-3xl font-bold mb-6 text-center">About Us</h1>
+            <p class="text-gray-700 text-lg mb-6">
+                Welcome to <b>Travel.com</b>, your ultimate travel partner! Our goal is to provide seamless and convenient travel solutions, including:
+            </p>
+            <ul class="list-disc pl-6 text-gray-700 mb-6">
+                <li>Quick and reliable flight booking services</li>
+                <li>Access to exclusive travel offers and discounts</li>
+                <li>Easy management of your flight reservations</li>
+                <li>Comprehensive customer support</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mb-4">How Can We Help?</h2>
+            <div class="accordion" id="helpAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How do I book a flight?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#helpAccordion">
+                        <div class="accordion-body">
+                            To book a flight, navigate to the <b>Réservation</b> page, fill in your travel details, and click "Search". You'll find the best options for your trip.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Can I modify my booking?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#helpAccordion">
+                        <div class="accordion-body">
+                            Yes, you can modify your booking from the <b>Gestion des Modifications de Vol</b> section. Enter your reservation details to update your booking.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Where can I find special offers?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#helpAccordion">
+                        <div class="accordion-body">
+                            Check the <b>Offres Spéciales et Réductions</b> page for the latest travel deals and discounts!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2023 Travel.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-FQykN1hBnIxI4wfLAJD3LVLZ1EwwHOHAbuZLnpP3Vcl2kxEG9KRhAYkVu5Q3K/04" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Travel.com - Sign In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="bg-blue-600 text-white">
+       
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="flex items-center">
+                <img src="https://storage.googleapis.com/a1aa/image/CizLW4IqEEJWDBMTc8jx7GWvqxo3E68zc4tdCdBumvSpYj9E.jpg" alt="Travel.com logo" class="h-12" width="150" height="50">
+                <nav class="ml-10 space-x-4">
+                    <a href="index.html" class="hover:underline">Accueil</a>
+                    <a href="reservation.html" class="hover:underline">Réservation</a>
+                    <a href="aboutus.html" class="hover:underline">About Us</a>
+                    <a href="contact.html" class="hover:underline">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+    
+    </header>
+    <main class="container mx-auto py-12 px-6">
+        <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-3xl font-bold mb-6 text-center">Sign In</h1>
+            <!-- Section pour afficher les messages -->
+            <?php if (isset($_GET['error'])): ?>
+                <div class="bg-red-100 text-red-700 p-4 rounded mb-4">
+                    <?= htmlspecialchars($_GET['error']) ?>
+                </div>
+            <?php endif; ?>
+            <form class="space-y-4" action="login.php" method="POST">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="email">Email</label>
+                    <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" id="email" name="email" type="email" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="password">Password</label>
+                    <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" id="password" name="password" type="password" required>
+                </div>
+                <button class="w-full bg-blue-600 text-white py-2 rounded-md shadow-md hover:bg-blue-700" type="submit">Sign In</button>
+            </form>
+            <p class="mt-6 text-center text-gray-700">
+                Don't have an account? <a class="text-blue-600 hover:underline" href="registre.html">Register</a>
+            </p>
+        </div>
+    </main>
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2023 Travel.com. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
